@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import GlobalNavGroup from "@/ui/global-nav";
+import { appContainer, contentArea, main, nav } from "@/style/global.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className={appContainer}>
+          <div className={contentArea}>
+            <div className={nav}>
+              <GlobalNavGroup />
+            </div>
+            <div className={main}>{children}</div>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
