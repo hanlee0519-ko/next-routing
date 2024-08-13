@@ -1,7 +1,7 @@
 export default function HomePage() {
   return (
     <main>
-      <h1>Make Han Level Up</h1>
+      <h1>라우팅</h1>
     </main>
   );
 }

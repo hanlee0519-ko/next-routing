@@ -1,6 +1,6 @@
 "use client";
 
-import { type Item, menuList } from "@/data/menu";
+import { type Item, routingList } from "@/data/routing-data";
 import { useSelectedLayoutSegment } from "next/navigation";
 import Link from "next/link";
 import {
@@ -37,7 +37,7 @@ const GlobalNavGroup = () => {
       </div>
 
       <nav>
-        {menuList.map((section) => {
+        {routingList.map((section) => {
           return (
             <div key={section.name}>
               <h3>{section.name}</h3>

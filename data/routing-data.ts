@@ -4,7 +4,7 @@ export type Item = {
   description?: string;
 };
 
-export const menuList: { name: string; itemList: Item[] }[] = [
+export const routingList: { name: string; itemList: Item[] }[] = [
   {
     name: "라우팅 레이아웃",
     itemList: [

@@ -1,7 +1,7 @@
 export default function DynamicRoutePage() {
   return (
     <main>
-      <h1>Hello, Dynamic Route Page</h1>
+      <h1>This, 동적 라우팅</h1>
     </main>
   );
 }
