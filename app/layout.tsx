@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -23,7 +23,9 @@ export default function RootLayout({
             <div className={nav}>
               <GlobalNavGroup />
             </div>
-            <div className={main}>{children}</div>
+            <div className={main}>
+              <div>{children}</div>
+            </div>
           </div>
         </div>
       </body>

@@ -19,9 +19,10 @@ export const menuList: { name: string; itemList: Item[] }[] = [
         description: "동적으로 생성되는 라우팅",
       },
       {
-        name: "라우팅 그룹",
-        slug: "route-group",
-        description: "URL 경로에 영향을 주지 않고 라우트를 조직",
+        name: "병렬 라우팅",
+        slug: "parallel",
+        description:
+          "동시에 여러 페이지를 하나의 레이아웃 안에서 독립적으로 렌더링, 관리하는 기술을 말함",
       },
     ],
   },

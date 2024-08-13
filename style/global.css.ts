@@ -27,7 +27,9 @@ export const nav = style({
 });
 
 export const main = style({
+  padding: "10px",
   display: "flex",
   backgroundColor: "lightskyblue",
+  flexDirection: "column",
   flex: 1,
 });
